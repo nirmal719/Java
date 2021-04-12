@@ -26,7 +26,8 @@ public class LinkedList1{
 		Node lastNode = new Node(d);
 		
 		if (n == null){
-			head.next = lastNode;
+			head = lastNode;
+			lastNode.next = null;
 			return;
 		}
 		
